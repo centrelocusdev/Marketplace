@@ -1,0 +1,48 @@
+.container{
+    height:660px;
+    width:100vw;
+    padding: 80px 69px;
+    background: linear-gradient(90deg, #E0E5E5 0.21%, #FFF 97.74%);
+}
+.innerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 115px;
+    /* height:100%; */
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    width:50%;
+    padding:10px 0;
+}
+.left span:first-child{
+    color: #000;
+    font-family: Inria Serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+
+}
+.freelanceContent{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.freelanceCard{
+    display: flex;
+    gap:30px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width:50%;
+    height: 100%;
+}
