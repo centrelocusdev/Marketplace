@@ -7,33 +7,15 @@ const FindTalent = () => {
   return (
     <div className={style.container}>
       <div className={style.innerContainer}>
-        <div className={style.top}>
           <div className={style.leftImageBox}>
           <div className={style.talentImages}>
-          <div>
             <Image
               src={findTalentPicture}
               style={{
-                width: "80%",
-                height: "100%",
-                position: "absolute",
-                bottom: "0px",
-                left: "0px",
-              }}
-            />
-          </div>
-          <div>
-            <Image
-              src={Vector}
-              style={{
                 width: "100%",
                 height: "100%",
-                position: "absolute",
-                bottom: "10%",
-                left: "0px",
               }}
             />
-          </div>
         </div>
           </div>
           <div className={style.rightContentBox}>
@@ -52,10 +34,7 @@ const FindTalent = () => {
             </div>
           </div>
         </div>
-        <div className={style.bottom}></div>
-        
       </div>
-    </div>
   );
 };
 

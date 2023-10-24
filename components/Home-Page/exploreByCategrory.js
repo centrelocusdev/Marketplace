@@ -28,8 +28,6 @@ const ExploreByCategrory = () => {
       img: Play2Earn,
       name: "Play 2 Earn",
     },
-  ];
-  const bottomCategories = [
     {
       img: DeFi,
       name: "DeFi",
@@ -47,6 +45,7 @@ const ExploreByCategrory = () => {
       name: "Web3 Wallets",
     },
   ];
+ 
   return (
     <div className={style.container}>
       <div className={style.containerInner}>
@@ -56,25 +55,16 @@ const ExploreByCategrory = () => {
         </div>
         <div className={style.categories}>
           <div className={style.top}>
-            {topCategories.map((category)=> {
+            {topCategories.map((category , index)=> {
               return(
-                <div className={style.categoryBox}>
+                <div className={`${style.categoryBox} ${parseInt(index%2) == 0 && style.categoryBoxBack }`}>
                 <Image src={category.img} width={150} height={150} />
                 <p>{category.name}</p>
               </div>
               )
             })}
           </div>
-          <div className={style.bottom}>
-          {bottomCategories.map((category)=> {
-              return(
-                <div className={style.categoryBox}>
-                <Image src={category.img} width={150} height={150} />
-                <p>{category.name}</p>
-              </div>
-              )
-            })}
-          </div>
+        
         </div>
       </div>
     </div>

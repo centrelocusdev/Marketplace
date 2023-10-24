@@ -47,7 +47,7 @@ const FeaturedJobs = () => {
                             </div>
                             <div className={style.cardBottom}>
                                 <button className='primary-btn'>Explore</button>
-                                <button className='primary-btn'>Save</button>
+                                <button className='primary-btn'><Image src={Save} height={24} width={24}/>Save</button>
                             </div>
                         </div>
                     )

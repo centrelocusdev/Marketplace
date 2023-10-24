@@ -18,6 +18,7 @@ const footer = () => {
             <button className='primary-btn'>Get Started</button>
           </div>
         </div>
+        <div className={style.endCardBox}>
         <div className={style.endCard}>
           <p>Services</p>
           <p>Design</p>
@@ -39,6 +40,7 @@ const footer = () => {
           <p>Why Choose Us</p>
           <p>Pricing</p>
           <p>Testimonial</p>
+        </div>
         </div>
       </div>
       <div className={style.innerBottom}>

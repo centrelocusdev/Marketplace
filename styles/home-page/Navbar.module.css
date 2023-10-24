@@ -1,10 +1,12 @@
 .main {
   width: 100vw;
-  height: 5vw;
+  height: 70px;
   margin:0 auto;
   display:flex;
   align-items: center;
   justify-content: center;
+  background: #FDE1C2;
+  padding: 8px 28px;
 }
 .mainInner {
   width: 100%;
@@ -27,7 +29,7 @@
 .mainInner ul li {
   list-style: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: var(--font20);
   font-weight: 400;
   font-family: Inria Serif;
 }
@@ -46,7 +48,7 @@
 .right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end ;
   width: 60%;
   gap: 10px;
 }
@@ -55,6 +57,10 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
+}
+.navDropdown select{
+  border: none;
+  background-color: #FDE1C2;;
 }
 .searchBox{
   display:flex;
@@ -69,4 +75,10 @@
   border:none;  
   padding: 10px 100px 10px 0;
   /* width: 406px; */
+}
+
+@media (max-width: 1060px){
+  .mid{
+    display: none;
+  }
 }

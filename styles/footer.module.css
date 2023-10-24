@@ -1,7 +1,7 @@
 .container{
     width:100vw;
-    height:353px;
-    padding: 20px 10px;
+    height:auto;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,36 +9,47 @@
 }
 .innerTop{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap:50px;
+    width:100%;
+}
+.firstCard{
+    width:40%;
+    display: flex;
+    flex-direction: column;
 }
 .firstCard div{
     display: flex;
+    width:100%;
+    gap:5px;
+
 }
 .firstCard p{
     margin-top:25px;
+    margin-bottom:10px;
     color: #000;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: var(--font18);
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 27px */
 }
 .firstCard button{
-    font-size: 24px;
+    font-size: var(--font24);
     font-family: Inria Serif;
+    width:30%;
 }
 .firstCard div input{
+    width:70%;
     border:none;
     display: flex;
-    /* height: 60px; */
-    padding: 15px 150px 15px 50px;
+    padding: 15px 15px 15px 50px;
     align-items: flex-start;
     gap: 10px;
     color: rgba(0, 0, 0, 0.80);
     border-radius: 10px;
-background: #D9D9D9;
+    background: #D9D9D9;
 
 /* Paragraph */
     font-family: Roboto;
@@ -48,7 +59,15 @@ background: #D9D9D9;
     line-height: 150%; /* 24px */
     
 }
+.endCardBox{
+    display: flex;
+    width:60%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .endCard{
+    /* width:33.3%; */
+    flex: 1,1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -67,7 +86,7 @@ background: #D9D9D9;
 }
 .endCard p:nth-child(1){
     font-weight: 600;
-    font-size: 18px;
+    font-size: var(--font18);
 }
 
 .innerBottom{
@@ -79,7 +98,7 @@ gap:80px;
 .innerBottom p{
     color: #000;
     font-family: Inter;
-    font-size: 20px;
+    font-size: var(--font20);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 30px */
@@ -87,4 +106,49 @@ gap:80px;
 .socialMedia{
     display: flex;
     gap:24px;
+}
+@media(max-width: 900px){
+.innerTop{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.firstCard{
+    width:70%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.endCardBox{
+    width: 80%;
+    gap:30px;
+   
+}
+.endCard{
+    align-items: center;
+    justify-content: center;
+}
+.endCard p{
+    text-align: center;
+}
+.innerBottom{
+    flex-direction: column;
+    gap:20px;
+}
+}
+/* @media(max-width: 600px){
+    .endCardBox{
+        flex-direction: column;
+    }
+} */
+
+@media (max-width: 500px){
+    .firstCard p{
+        text-align: center;
+    }
+    .firstCard div input{
+        padding: 2px 10px;
+        font-size: 14px;
+    }
 }

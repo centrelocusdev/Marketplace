@@ -19,16 +19,34 @@ const nav = () => {
             </div>
             <div className={style.right}>
               <li className={style.navDropdown}>
-                <p>Marketplace</p>
-                <RiArrowDropDownLine />
+              <select>
+                <option selected disabled>Marketplace</option>
+
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+                  <option>option 4</option>
+              </select>
               </li>
               <li className={style.navDropdown}>
-                <p>Service Providers</p>
-                <RiArrowDropDownLine />
+              <select>
+                <option selected disabled>Service Providers</option>
+
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+                  <option>option 4</option>
+                </select>
               </li>
               <li className={style.navDropdown}>
-                <p>content</p>
-                <RiArrowDropDownLine />
+              <select>
+                <option selected disabled>Content</option>
+
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+                  <option>option 4</option>
+                </select>
               </li>
               <li>
               <button className="primary-btn">Login</button>

@@ -17,11 +17,11 @@ const banner = () => {
 
             <div className={style.inputBox}>
               <div className={style.searchBox}>
-                <AiOutlineSearch color="#29849F" size={30} />
-                <input type="text" placeholder="Job title" />
+                <AiOutlineSearch color="#3943A8" size={30} />
+                <input type="text" placeholder="Job Title" />
               </div>
               <div className={style.locationBox}>
-                <CiLocationOn color="#29849F" size={30} />
+                <CiLocationOn color="#3943A8" size={30} />
 
                 <select name="location" id="location">
                   <option value="India">India</option>
@@ -39,8 +39,16 @@ const banner = () => {
           </div>
         </section>
         <section className={style.right}>
-          <Image src={BannerImage} height={817} width={472} />
-         
+          <Image src={BannerImage}
+          height={817}
+          width={472}
+          // style={{
+          //   height: "100%",
+          //   width:"70%"
+          // }}
+          // layout="responsive"
+          loading="lazy"
+          />
         </section>
       </div>
     </div>
@@ -128,7 +136,7 @@ const Wrapper = styled.main`
               border: none;
               color: #fff;
               font-weight: 700;
-              font-size: 12px;
+              font-size: var(--font12);
             }
           }
         }
