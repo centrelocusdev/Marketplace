@@ -1,0 +1,13 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="streamline:interface-calendar-check-approve-calendar-check-date-day-month-success" clip-path="url(#clip0_120_1725)">
+<g id="Group">
+<path id="Vector" d="M3.21415 5.35725C2.64583 5.35725 2.10078 5.58301 1.69892 5.98488C1.29705 6.38674 1.07129 6.93178 1.07129 7.5001V26.7858C1.07129 27.3541 1.29705 27.8992 1.69892 28.301C2.10078 28.7029 2.64583 28.9287 3.21415 28.9287H26.7856C27.3539 28.9287 27.8989 28.7029 28.3008 28.301C28.7027 27.8992 28.9284 27.3541 28.9284 26.7858V7.5001C28.9284 6.93178 28.7027 6.38674 28.3008 5.98488C27.8989 5.58301 27.3539 5.35725 26.7856 5.35725H22.4999M7.49986 1.07153V9.64296M22.4999 1.07153V9.64296M7.49986 5.35725H18.2141" stroke="#3943A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8.57129 19.2859L12.857 22.5001L20.357 13.9287" stroke="#3943A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_120_1725">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

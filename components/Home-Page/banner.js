@@ -82,7 +82,7 @@ const Wrapper = styled.main`
           padding-left: 40px;
           h1 {
             font-family: "Roboto", sans-serif;
-            font-size: 52px;
+            font-size: var(--font52);
             margin: 0;
             color: #343a40;
           }

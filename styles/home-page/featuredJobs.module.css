@@ -75,7 +75,7 @@
   font-size: var(--font18);
 }
 .first p:last-child {
-  font-size: 30px;
+  font-size: var(--font30);
   font-weight: 700;
 }
 .second {

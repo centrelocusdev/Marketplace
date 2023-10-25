@@ -1,0 +1,246 @@
+.banner{
+    width:100vw;
+    height: 354px;
+    background: #FEECD9;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.bannerGroup{
+    position:absolute;
+    right:0
+}
+.bannerInner{
+    display: flex;
+    gap:50px;       
+    z-index: 1;
+    height: 50%;
+    margin-left:161px;
+}
+.bannerInnerRight{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+.bannerInnerRight p{
+    color: #141414;
+    font-family: DM Sans;
+}
+.firstPara{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 150%; /* 54px */
+}
+.bannerInnerRight p:nth-child(2){
+    font-size: var(--font16);
+    font-weight: 400;
+    line-height: 166%; /* 26.56px */
+    letter-spacing: 0.4px;
+}
+.bannerInnerRightBottom{
+    display: flex;
+    gap:2px 24px;
+    flex-wrap: wrap;
+}
+.bannerInnerRightBottom div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.bannerInnerRightBottom div p{
+    font-size: var(--font16);
+    font-weight: 400;
+}
+.bannerInnerRightBottom div p:nth-child(3){
+    color: var(--light-text-disabled, rgba(0, 0, 0, 0.38));
+
+}
+
+/* Body CSS Starts */
+
+.container{
+    padding: 80px 60px;
+    width:100vw;
+    height:fit-content;
+    display: flex;
+}
+.container p{
+    color: #000;
+    font-family: DM Sans;
+}
+.containerLeft{
+    width:70%;
+}
+.containerRight{
+    width: 30%;
+}
+.paraBoxes{
+    width:100%;
+    padding:30px;
+    display: flex;
+    gap:40px;
+    flex-direction: column;
+    border-bottom: 1px solid #3943A8;
+
+}
+
+.paraBoxes p:first-child{
+    font-size: 24px;
+    font-weight: 400;
+}
+.paraBoxes p:last-child{
+    font-family: Inria Sans;
+    font-size: 16px;
+}
+.projectsListBox {
+    padding:30px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.cardBoxHeading{
+    font-size: 36px;
+    line-height: 150%; /* 54px */
+}
+/* Right Side CSS */
+.containerRight{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(251, 210, 163, 0.50);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap:28px;
+    height:fit-content
+}
+.containerRightInner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+}
+.containerRightInner p:nth-child(1){
+    font-size: 22px;
+    font-weight: 700;
+}
+.rightInnerBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.rightInnerBox div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(251, 210, 163, 0.50);
+}
+.rightInnerBox div div{
+    display: flex;
+    gap:11px;
+}
+.containerRight button{
+    padding: 8px 30px;
+}
+/* Card CSS */
+.card{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+    border: 1px solid #FBD2A3;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.cardLeft{
+    display: flex;
+    gap:20px;
+}
+.cardTop{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.cardBottom{
+    display: flex;
+    gap:20px 15px;
+}
+.cardHeading{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%; 
+}
+.cardTop p:nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.cardBottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cardBottom p{
+font-size: 18px;
+}
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    .containerLeft{
+        width:100%;
+    }
+    .containerRight{
+        width:100%;
+    }
+    .projectsListBox {
+        padding: 10px;
+    }
+}
+@media (max-width: 730px){
+    .banner{
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerInner{
+        margin-left:0;
+    }
+    .cardLeft{
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        padding: 80px 0;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardLeft{
+        justify-content: center;
+        align-items: center;
+    }
+    .cardLeft p{
+        text-align: center;
+    }
+    .cardBottom{
+        justify-content: center;
+    }
+}
+@media (max-width: 560px){
+    .bannerInner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerInner p{
+        text-align: center;
+    }
+    .bannerInnerRightBottom{
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -58,20 +58,15 @@ const employees = () => {
         <Card/>
         <Card/>
         <Card/>
-      </div>
-      <div className={style.cardRow}>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
         <Card/>
         <Card/>
         <Card/>
         <Card/>
       </div>
-      <div className={style.cardRow}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-      </div>
-      
       {/* Card Ends */}
        
       </div>

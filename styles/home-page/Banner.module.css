@@ -43,7 +43,7 @@
 }
 .leftBox p span {
   font-weight: 600;
-  font-size: 12 px;
+  font-size: var(--font12);
 }
 .leftBox p span:nth-child(1) {
   color: #868e96;

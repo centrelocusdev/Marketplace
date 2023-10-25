@@ -63,7 +63,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -78,6 +78,7 @@
   gap: 5px;
   border: 1px solid rgba(251, 210, 163, 0.5);
   background: #fff;
+  flex: 1 1 311px;
 }
 .cardInner {
   display: flex;
@@ -97,7 +98,7 @@
   font-size: var(--font24);
 }
 .cardInner p:nth-child(3) {
-  font-size: 16px;
+  font-size: var(--font16);
 }
 .cardInner div:nth-child(4) {
   display: flex;
