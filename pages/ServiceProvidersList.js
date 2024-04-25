@@ -1,7 +1,7 @@
 import React from "react";
 import ListBannerSection from "@/components/listBannerSection";
 import Layout from "../components/layout";
-import style from "../styles/freelancers/freelancers.module.css";
+import style from "../styles/Servide Providers/ServiceProvidersList.module.css";
 import Image from "next/image";
 import searchBlack from "../public/img/Employees/searchBlack.svg";
 import options from "../public/img/Employees/options.svg";

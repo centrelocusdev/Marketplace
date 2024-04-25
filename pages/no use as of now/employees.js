@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Card from "@/components/Employees/Card";
 import style from "../styles/employees/employees.module.css";
 import downDark from '../public/img/Employees/downDark.png';

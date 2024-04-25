@@ -1,0 +1,340 @@
+.banner {
+  width: 100vw;
+  min-height: 354px;
+  background: #feecd9;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.bannerGroup {
+  position: absolute;
+  right: 0;
+}
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 161px;
+  z-index: 1;
+}
+.bannerInner {
+  display: flex;
+  gap: 50px;
+  /* height: 50%; */
+}
+.bannerInnerRight {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  gap: 8px;
+}
+.paraHeading {
+  color: #141414;
+  font-family: DM Sans;
+  font-size: 20px;
+}
+.firstPara {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%; /* 54px */
+}
+
+.bannerInnerRightBottom {
+  display: flex;
+  gap: 2px 24px;
+  flex-wrap: wrap;
+}
+.bannerInnerRightBottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.bannerInnerRightBottom div p {
+  font-size: var(--font16);
+  font-weight: 400;
+}
+.bannerInnerRightBottom div p:nth-child(3) {
+  color: var(--light-text-disabled, rgba(0, 0, 0, 0.38));
+}
+/* Banner CSS Ends */
+
+/* Body CSS starts */
+.container {
+  width: 100vw;
+  height: fit-content;
+  padding: 80px 60px;
+  display: flex;
+}
+.containerLeft {
+  width: 70%;
+}
+.containerRight {
+  width: 30%;
+}
+/* Container Left CSS Starts */
+.topHeaders {
+  padding: 20px 0;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width:100%;
+}
+.topHeadersCard {
+  display: flex;
+  /* border: 1px solid black; */
+  height: 100%;
+  gap:27px;
+  flex:1 1;
+}
+.topHeadersCard div:first-child{
+    height:80px;
+    width:80px;
+    border-radius: 50px;
+    background: #FEECD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+.topHeadersCard div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px;
+}
+.topHeadersCard div:last-child p{
+    color: #000;
+    font-family: DM Sans;
+}
+.topHeadersCard div:last-child p:nth-child(1){
+font-size: 20px;
+font-weight: 700;
+line-height: 150%; /* 30px */
+}
+.topHeadersCard div:last-child p:nth-child(2){
+    font-size: 16px;
+}
+.description{
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  width: 90%;
+  border-bottom: 1px solid #3943A8;
+}
+
+.cardsHeading{
+  font-size: 36px;
+}
+.description p:last-child{
+  font-size: 16px;
+}
+.bottomCards{
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  width: 90%;
+  border-bottom: 1px solid #3943A8;
+}
+
+.bottomCardsDiv2{
+  width:95%;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  border-left: 2px solid #3943A8;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bottomCardsDiv2Card{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  align-items: center;
+}
+.bottomCardsDiv2Card div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:85%
+}
+.bottomCardsDiv2Card div p:first-child{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px; /* 112.5% */
+}
+.bottomCardsDiv2Card div p:last-child{
+  color: var(--colors-black, #212121);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  line-height: 18px; /* 128.571% */
+  opacity: 0.7;
+}
+.bottomCardsDiv2Card span{
+  border-radius: 20px;
+  background: rgba(251, 210, 163, 0.50);
+  padding: 10px 20px;
+  font-size: 10px;
+  color: #000;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:15%;
+  height: fit-content;
+
+}
+/* Container Left CSS Ends */
+
+/* Container Right CSS Starts */
+.containerRight {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(251, 210, 163, 0.5);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 28px;
+  height: fit-content;
+}
+.containerRightInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.containerRightInner p:nth-child(1) {
+  font-size: 22px;
+  font-weight: 700;
+}
+.rightInnerBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rightInnerBox div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(251, 210, 163, 0.5);
+}
+.rightInnerBox div div {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.containerRight button {
+  padding: 8px 30px;
+}
+/* Container Right CSS Ends */
+
+/* Body CSS Ends */
+
+@media (max-width: 900px){
+  .container{
+      flex-direction: column;
+      gap:50px;
+  }
+  .containerLeft{
+      width:100%;
+  }
+  .containerRight{
+      width:100%;
+  }
+  .description{
+    width:100%;
+  }
+  .bottomCards{
+    width:100%;
+  }
+}
+@media (max-width: 730px){
+  .banner{
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerContainer{
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      margin-top:50px;
+      margin-bottom: 50px;
+  }
+  .firstPara{
+    text-align: center;
+  }
+  .bannerInner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannerInnerRight{
+    align-items: center;
+  }
+ 
+  .cardLeft{
+      flex-direction: column;
+  }
+}
+@media (max-width: 600px){
+  .container{
+      padding: 80px 0;
+  }
+  .card{
+      flex-direction: column;
+      align-items: center;
+  }
+  .cardLeft{
+      justify-content: center;
+      align-items: center;
+  }
+  .cardLeft p{
+      text-align: center;
+  }
+  .cardBottom{
+      justify-content: center;
+  }
+}
+@media (max-width: 560px){
+  .bannerInner{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .bannerInner p{
+      text-align: center;
+  }
+  .bannerInnerRightBottom{
+      justify-content: center;
+      align-items: center;
+  }
+}
+@media (max-width: 350px){
+.topHeaders{
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.topHeadersCard{
+  width: 90%;
+  gap:0;
+  justify-content: space-between;
+}
+
+
+.topHeadersCard div:last-child {
+  width:60%;
+}
+.bottomCards{
+width:100%;
+padding:30px 10px;
+}
+}

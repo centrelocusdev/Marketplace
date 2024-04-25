@@ -7,6 +7,7 @@ import FindTalent from '@/components/Home-Page/findTalent';
 import FeaturedJobs from '@/components/Home-Page/featuredJobs';
 import Freelance from '@/components/Home-Page/freelance';
 import PostJob from '@/components/Home-Page/postJob';
+
 export default function Home() {
   return (
     <>

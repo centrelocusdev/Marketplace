@@ -1,0 +1,449 @@
+.main {
+  height: auto;
+  width: 100vw;
+}
+/* Banner CSS Starts */
+.bannerContainer {
+  width: 100%;
+  height: 366px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.bannerLeft {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: fit-content;
+}
+.bannerLeft div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.bannerLeft p {
+  color: #000;
+  font-family: Inria Serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.bannerLeft div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.bannerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  /* border:1px solid red; */
+  width: 25%;
+}
+.ratings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.rightHeading {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+.rateTag {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.rateTag div {
+  background-color: blue;
+  width: 70%;
+}
+.rateTag p {
+  color: rgba(0, 0, 0, 0.6);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50%; /* 9px */
+  width: 30%;
+}
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.reviews p {
+  font-family: Roboto;
+}
+.reviewsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.reviewsLeft div {
+  display: flex;
+  align-items: center;
+}
+.reviewsLeft div span {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.reviewsLeft p:last-child {
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+}
+.reviewsRight {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.reviewsRight p:nth-child(1) {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto;
+  font-size: 24px;
+}
+.reviewsRight p:nth-child(2) {
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+/* Banner CSS Ends */
+
+/* About and Achievement Section Starts */
+.aboutAndAchievementsContainer {
+  display: flex;
+  width: 100%;
+  padding: 50px 46px;
+  /* border: 1px solid red; */
+  gap:50px;
+}
+.about {
+  width: 60%;
+  /* border: 2px solid blue; */
+  border: 1px solid rgba(251, 210, 163, 0.50);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.about div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  /* gap:100px; */
+  padding: 15px 30px; 
+  height: auto;
+}
+.about button {
+  display: flex;
+  width: 180px;
+  height: 60px;
+  padding: 5px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px #3943a8;
+  border: none;
+
+  color: #000;
+  font-family: Inria Serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.about button:nth-child(1) {
+  border-radius: 10px;
+  background: #3943a8;
+  box-shadow: 0px 4px 4px 0px #3943a8;
+  color: white;
+}
+.about div:nth-child(2) {
+  padding: 69px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about h3 {
+  color: #000;
+  font-family: Inria Serif;
+  font-weight: 700;
+  line-height: 50%; /* 24px */
+}
+.about div:nth-child(2) section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.about div:nth-child(2) section h3 {
+  font-size: 30px;
+}
+.about div:nth-child(2) section:nth-child(1) h3 {
+  font-size: 48px;
+}
+
+.about div:nth-child(2) section p {
+  color: #000;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.achievements {
+  width: 40%;
+  /* border: 1px solid orange; */
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #FEECD9;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+height: fit-content;
+}
+.achievementsBox{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100%;
+}
+.achievementsTop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:10px;
+    width: 100%;
+}
+.achievementsTop p{
+    color: #000;
+    font-family: Inria Serif;
+    font-size: 36px;
+    }
+.achievementsBottom{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.achievementsBottom div{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.achievementsBottom div span{
+    color: #000;
+    font-family: Inria Serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.extraStuffBox{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 100%;
+}
+.extraStuffBox div{
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+    width:100%;
+    align-items: flex-start;
+}
+.extraStuffBox div p:nth-child(1){
+    color: #000;
+    font-family: Inria Serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50%; /* 15px */
+    text-transform: capitalize;
+}
+.extraStuffBox div p:nth-child(2){
+    color: #000;
+    font-family: Inria Sans;
+    font-size: 20px;
+     font-weight: 400;
+ }
+/* About and Achievement Section Ends */
+
+/* Reviews Section Starts */
+.reviewContainer{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  padding: 32px 73px;
+  /* border:1px solid red; */
+  gap:50px;
+}
+.reviewTopHeadingBox{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+.reviewHeading{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.reviewHeading h2{
+  color: #000;
+  font-family: Inria Serif;
+  font-size: 56px;
+  font-weight: 700;
+}
+.reviewHeading p{
+  color: #000;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 170% */
+}
+.reviewButtons{
+  display: flex;
+  gap:15px;
+  justify-content: center;
+  align-items: center;
+}
+.reviewButtons button{
+  display: flex;
+  height:70px;
+  width:70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  background-color: white;
+}
+.reviewsBox{
+  width:100%;
+
+  /* display: flex; */
+}
+
+.reviewsBox button{
+  background-color: black;
+  border-radius: 100%;
+}
+.reviewsBox button:hover{
+background-color: gray;
+}
+.reviewCard{
+  display: flex;
+  flex-direction: column;
+  padding:40px 30px;
+  width: 360px;
+  border-radius: 6px;
+  background: #FEECD9;
+  align-items: center;
+  height: fit-content;
+  margin-right: 60px;
+  border:1px solid rgb(250, 225, 199);;
+}
+
+.reviewCard p:first-child{
+  color: #000;
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 16px;
+   font-weight: 400;
+  line-height: 34px; /* 212.5% */
+  margin-bottom: 25px;
+}
+.ratingsStars{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.ratingsUsers{
+  display: flex;
+}
+.reviewUser{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  align-items: center;
+  justify-content: center;
+}
+.reviewUser p:nth-child(2){
+  color: #000;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+   font-weight: 600;
+ }
+.reviewUser p:nth-child(3){
+  color: #000;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  }
+/* Reviews Section Ends */
+
+/* Get What you need starts */
+.getWhatYouNeed{
+  display: flex;
+justify-content: center;
+align-items: center;
+  padding: 50px 118px;
+  width:100%;
+  background: #FEECD9;
+
+}
+.getWhatYouNeedInner{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.getWhatYouNeedInner div:first-child{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  width:70%;
+
+
+}
+.getWhatYouNeedInner div:first-child h2{
+  color: #000;
+  font-family: Inria Serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 100px; /* 119.048% */
+}
+.getWhatYouNeedInner div:first-child p{
+  color: #000;
+font-family: Inria Sans;
+font-size: 20px;
+font-weight: 400;
+}
+.getWhatYouNeedInner div:last-child{
+  width: 20%;
+}
+.getWhatYouNeedInner div:last-child button{
+  display: flex;
+  width: 200px;
+  height: 80px;
+  padding: 5px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+font-family: Inria Serif;
+font-size: 24px;
+font-weight: 700;
+border-radius: 10px;
+background: #3943A8;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+border:none;
+}
+/* Get What you need ends */

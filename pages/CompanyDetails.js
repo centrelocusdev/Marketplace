@@ -3,9 +3,9 @@ import style from '../styles/All Details Files/CompanyDetails.module.css';
 import Image from 'next/image';
 import CardLogo from '../public/img/All Details Pages/Company Details/card-logo.png'
 import BannerGroup from '../public/img/All Details Pages/Company Details/banner-group.png';
-import locationBlack from '../public/img/All Details Pages/Company Details/location-black.svg'
-import calender from '../public/img/All Details Pages/Company Details/calender.svg';
-import yellowStar from '../public/img/All Details Pages/Company Details/star-yellow.svg';
+import locationBlack from '../public/img/All Details Pages/location-black.svg'
+import calender from '../public/img/All Details Pages/calender.svg';
+import yellowStar from '../public/img/All Details Pages/star-yellow.svg';
 import PrimaryIndustry from '../public/img/All Details Pages/Company Details/primary-industry.svg';
 import companySize from '../public/img/All Details Pages/Company Details/company-size.svg';
 import LocationBlue from '../public/img/All Details Pages/Company Details/location-blue.svg';
@@ -46,6 +46,7 @@ const CompanyDetails = () => {
                 <Image className={style.bannerGroup} src={BannerGroup} />
             </div>
             {/* Banner Ends */}
+            
             {/* Body Starts */}
             <div className={style.container}>
                     <div className={style.containerLeft}>
