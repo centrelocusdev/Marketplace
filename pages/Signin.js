@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import {PiDotBold} from 'react-icons/pi';
 import {BiArrowBack} from 'react-icons/bi';
 import Link from "next/link";
-import { signIn } from "next-auth/react";
+// import { signIn } from "next-auth/react";
 const Signin = () => {
  
   const [email, setEmail] = useState("");
