@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Card from "@/components/Employees/Card";
-import style from "../styles/employees/employees.module.css";
-import downDark from '../public/img/Employees/downDark.png';
-import downLight from '../public/img/Employees/downLight.svg';
-import options from '../public/img/Employees/options.svg'
-import searchBlack from '../public/img/Employees/searchBlack.svg';
+import style from "@/styles/employees/employees.module.css";
+import downDark from '@/public/img/Employees/downDark.png';
+import downLight from '@/public/img/Employees/downLight.svg';
+import options from '@/public/img/Employees/options.svg'
+import searchBlack from '@/public/img/Employees/searchBlack.svg';
 import Image from "next/image";
 import ListBannerSection from "@/components/listBannerSection";
 

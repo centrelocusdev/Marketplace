@@ -1,9 +1,9 @@
 import React from 'react'
 import ListBannerSection from '@/components/listBannerSection'
 import Layout from '@/components/layout'
-import style from '../styles/JobList/JobList.module.css';
+import style from '@styles/JobList/JobList.module.css';
 import Image from 'next/image';
-import searchBlack from "../public/img/Employees/searchBlack.svg";
+import searchBlack from "@/public/img/Employees/searchBlack.svg";
 import Card from "@/components/JobList/Card";
 
 const JobList = () => {
