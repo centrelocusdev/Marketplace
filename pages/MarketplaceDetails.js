@@ -6,7 +6,7 @@ import Image from "next/image";
 import bannerProfile from "@/public/img/Marketplace Details/banner profile.svg";
 import backArrow from "@/public/img/Marketplace Details/back-arrow.svg";
 import certificate from "@/public/img/Marketplace Details/Certificate.png";
-import facebook from "@/public/img/Marketplace Details/facebook.svg";
+import facebook from "@/public/img/Marketplace Details/Facebook.svg";
 import instagram from "@/public/img/Marketplace Details/Instagram.svg";
 import linkedin from "@/public/img/Marketplace Details/LinkedIn.svg";
 import news from "@/public/img/Marketplace Details/News.png";
@@ -14,7 +14,7 @@ import review2 from "@/public/img/Marketplace Details/review 2.svg";
 import filledStar from "@/public/img/Marketplace Details/filledStar.svg";
 import emptyStar from "@/public/img/Marketplace Details/emptyStar.svg";
 import twitter from "@/public/img/Marketplace Details/Twitter.svg";
-import view from "@/public/img/Marketplace Details/view.png";
+import view from "@/public/img/Marketplace Details/View.png";
 import nextArrow from "@/public/img/Marketplace Details/next-arrow.svg";
 
 import Layout from "@/components/layout";

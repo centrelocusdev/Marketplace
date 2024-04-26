@@ -1,9 +1,9 @@
 import React from "react";
 import style from "../../styles/home-page/ExploreByCategory.module.css";
-import SmartContacts from "../../public/img/Home-Page/diploma.png";
+import SmartContacts from "../../public/img/Home-Page/Diploma.png";
 import NativeBlockChain from "../../public/img/Home-Page/Blockchain Technology.png";
 import ExchangeDevelopment from "../../public/img/Home-Page/Dollar Euro Exchange.png";
-import Play2Earn from "../../public/img/Home-Page/Cash In Hand.png";
+import Play2Earn from "../../public/img/Home-Page/Cash in Hand.png";
 import DeFi from "../../public/img/Home-Page/Omnichannel.png";
 import PrivateBlockChain from "../../public/img/Home-Page/Grand Master Key.png";
 import GameFi from "../../public/img/Home-Page/Apple Arcade.png";
