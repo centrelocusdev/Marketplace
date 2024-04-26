@@ -1,12 +1,14 @@
 import React from "react";
 import ListBannerSection from "@/components/listBannerSection";
 import Layout from "../components/layout";
-import style from "../styles/Servide Providers/ServiceProvidersList.module.css";
+import style from "../styles/Service Providers/ServiceProvidersList.module.css";
 import Image from "next/image";
 import searchBlack from "../public/img/Employees/searchBlack.svg";
 import options from "../public/img/Employees/options.svg";
 import Card from "@/components/Freelancers/Card";
+import Link from "next/link";
 const freelancers = () => {
+  let array = new Array(20).fill(0);
   return (
     <Layout>
       {/* Banner starts */}
@@ -69,20 +71,14 @@ const freelancers = () => {
         {/* Input Box Ends */}
 
         <div className={style.cardRow}>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+          {array.map((item) => {
+            return (
+              <Link href="/ServiceProvidersDetails">
+                <Card />
+              </Link>
+            );
+          })}
         </div>
-      
       </div>
       {/* Cards Box Ends */}
     </Layout>

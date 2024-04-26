@@ -1,6 +1,6 @@
 import React from 'react'
-import style from '../../styles/freelancers/freelancers.module.css';
-import girl from '../../public/img/Freelancers/girl.png';
+import style from '../../styles/Service Providers/ServiceProvidersList.module.css';
+import girl from '../../public/img/All Details Pages/Service Providers Details/girl.png';
 import starSmall from "../../public/img/Employees/starSmall.svg";
 
 import Image from 'next/image';

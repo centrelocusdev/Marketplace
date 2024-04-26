@@ -18,8 +18,10 @@ const nav = () => {
             </div>
           </div>
           <div className={style.right}>
+            <Link href="MarketplaceDetails">
             <li className={style.navDropdown}>
-              <select>
+              Marketplace
+              {/* <select>
                 <option selected disabled>
                   Marketplace
                 </option>
@@ -28,8 +30,10 @@ const nav = () => {
                 <option>option 2</option>
                 <option>option 3</option>
                 <option>option 4</option>
-              </select>
+              </select> */}
             </li>
+            </Link>
+           
             <li className={style.navDropdown}>
               <select>
                 <option selected disabled>

@@ -82,6 +82,11 @@ const Signin = () => {
               <div className={style.buttonBox}>
               <button onClick={handleSubmit}>Sign In</button>
               <p>Forgot your password?</p>
+              <p>for development only</p>
+              <button>service provider</button>
+              <Link href="/ServiceProvidersList">
+              <button>servide taker</button>
+              </Link>
               </div>
            </form>
            <div className={style.newAccount}>
@@ -100,6 +105,7 @@ const Signin = () => {
             <Image src={signin} className={style.image} alt="signin"/>
           </div>
         </div>
+        
       </div>
       <ToastContainer
         position="top-right"
