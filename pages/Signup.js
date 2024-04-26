@@ -19,77 +19,77 @@ const Signup = () => {
   const [isFormValid, setIsFormValid] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  async function handleSubmit(event) {
-    try {
-      setIsFormSubmitted(true);
-      event.preventDefault();
-      if (isFormValid) {
-        const response = await fetch("/api/auth/signup", {
-          method: "POST",
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            password,
-            serviceType,
-            userType,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-        event.target.value = "";
-        if (!response) {
-          throw new err("Something went wrong!");
-        }
-        const data = await response.json();
+  // async function handleSubmit(event) {
+  //   try {
+  //     setIsFormSubmitted(true);
+  //     event.preventDefault();
+  //     if (isFormValid) {
+  //       const response = await fetch("/api/auth/signup", {
+  //         method: "POST",
+  //         body: JSON.stringify({
+  //           firstName,
+  //           lastName,
+  //           email,
+  //           password,
+  //           serviceType,
+  //           userType,
+  //         }),
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       });
+  //       event.target.value = "";
+  //       if (!response) {
+  //         throw new err("Something went wrong!");
+  //       }
+  //       const data = await response.json();
 
-        if (data) {
-          toast(data.message);
-        }
-        console.log(data);
-      }else{
-        toast('fill all the fields in the form.');
-      }
-    } catch (err) {
-      console.log("err in signup", err.message);
-      if (err && err.message) {
-        toast(err.message);
-      }
-    }
-  }
-  useEffect(() => {
-    validateForm();
-  }, [firstName, lastName, email, password, serviceType, userType]);
-  // Validate form
-  const validateForm = () => {
-    let errs = {};
+  //       if (data) {
+  //         toast(data.message);
+  //       }
+  //       console.log(data);
+  //     }else{
+  //       toast('fill all the fields in the form.');
+  //     }
+  //   } catch (err) {
+  //     console.log("err in signup", err.message);
+  //     if (err && err.message) {
+  //       toast(err.message);
+  //     }
+  //   }
+  // }
+  // useEffect(() => {
+  //   validateForm();
+  // }, [firstName, lastName, email, password, serviceType, userType]);
+  // // Validate form
+  // const validateForm = () => {
+  //   let errs = {};
 
-    if (!firstName || !lastName) {
-      errs.name = "Name is required.";
-    }
+  //   if (!firstName || !lastName) {
+  //     errs.name = "Name is required.";
+  //   }
 
-    if (!email) {
-      errs.email = "Email is required.";
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errs.email = "Email is invalid.";
-    }
+  //   if (!email) {
+  //     errs.email = "Email is required.";
+  //   } else if (!/\S+@\S+\.\S+/.test(email)) {
+  //     errs.email = "Email is invalid.";
+  //   }
 
-    if (!password) {
-      errs.password = "Password is required.";
-    } else if (password.length < 7) {
-      errs.password = "Password must be at least 6 characters.";
-    }
-    if (!serviceType) {
-      errs.serviceType = "Service Type is required.";
-    }
-    if (!userType) {
-      errs.userType = "User Type is required.";
-    }
+  //   if (!password) {
+  //     errs.password = "Password is required.";
+  //   } else if (password.length < 7) {
+  //     errs.password = "Password must be at least 6 characters.";
+  //   }
+  //   if (!serviceType) {
+  //     errs.serviceType = "Service Type is required.";
+  //   }
+  //   if (!userType) {
+  //     errs.userType = "User Type is required.";
+  //   }
 
-    seterrs(errs);
-    setIsFormValid(Object.keys(errs).length === 0);
-  };
+  //   seterrs(errs);
+  //   setIsFormValid(Object.keys(errs).length === 0);
+  // };
 
   return (
     <div className={style.main}>
@@ -102,7 +102,7 @@ const Signup = () => {
               </Link>
               <p className={style.leftHeading}>Sign up</p>
            </div>
-            <form className={style.form} onSubmit={handleSubmit}>
+            <form className={style.form} >
               <div className={style.nameBox}>
                 <div className={style.inputTextBox}>
                 <input
@@ -213,7 +213,7 @@ const Signup = () => {
                 </div>
               </div>
             </form>
-            <button onClick={handleSubmit}>Sign Up</button>
+            <button >Sign Up</button>
           </div>
          <div className={style.terms}>
          <span>Terms and conditions</span>

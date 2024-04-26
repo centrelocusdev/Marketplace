@@ -17,48 +17,48 @@ const Signin = () => {
   const [isFormValid, setIsFormValid] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  async function handleSubmit(event) {
-    try {
-      setIsFormSubmitted(true);
-      event.preventDefault();
-      if (isFormValid) {
-       const result = await signIn("credentials" , {
-        redirect: false,
-        email,
-        password,
-       })
-       if(result){
-        console.log(result);
-       }
-      }else{
-        toast('fill all the fields in the form.');
-      }
-    } catch (err) {
-      console.log("err in signin", err.message);
-      if (err && err.message) {
-        toast(err.message);
-      }
-    }
-  }
-  useEffect(() => {
-    validateForm();
-  }, [email, password]);
-  // Validate form
-  const validateForm = () => {
-    let errs = {};
-    if (!email) {
-      errs.email = "Email is required.";
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errs.email = "Email is invalid.";
-    }
+  // async function handleSubmit(event) {
+  //   try {
+  //     setIsFormSubmitted(true);
+  //     event.preventDefault();
+  //     if (isFormValid) {
+  //      const result = await signIn("credentials" , {
+  //       redirect: false,
+  //       email,
+  //       password,
+  //      })
+  //      if(result){
+  //       console.log(result);
+  //      }
+  //     }else{
+  //       toast('fill all the fields in the form.');
+  //     }
+  //   } catch (err) {
+  //     console.log("err in signin", err.message);
+  //     if (err && err.message) {
+  //       toast(err.message);
+  //     }
+  //   }
+  // }
+  // useEffect(() => {
+  //   validateForm();
+  // }, [email, password]);
+  // // Validate form
+  // const validateForm = () => {
+  //   let errs = {};
+  //   if (!email) {
+  //     errs.email = "Email is required.";
+  //   } else if (!/\S+@\S+\.\S+/.test(email)) {
+  //     errs.email = "Email is invalid.";
+  //   }
 
-    if (!password) {
-      errs.password = "Password is required.";
-    } 
+  //   if (!password) {
+  //     errs.password = "Password is required.";
+  //   } 
    
-    seterrs(errs);
-    setIsFormValid(Object.keys(errs).length === 0);
-  };
+  //   seterrs(errs);
+  //   setIsFormValid(Object.keys(errs).length === 0);
+  // };
 
   return (
     <div className={style.main}>
@@ -80,7 +80,7 @@ const Signin = () => {
                   setPassword(e.target.value);
                 }}/>
               <div className={style.buttonBox}>
-              <button onClick={handleSubmit}>Sign In</button>
+              <button >Sign In</button>
               <p>Forgot your password?</p>
               <p>for development only</p>
               <button>service provider</button>
