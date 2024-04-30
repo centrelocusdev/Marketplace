@@ -65,7 +65,7 @@ const Signin = () => {
       <div className={style.container}>
         <div className={style.left}>
           <div className={style.leftInner}>
-           <form className={style.form} onSubmit={handleSubmit}> 
+           <form className={style.form} > 
            <div style={{display: "flex" , gap: "10px", alignItems: "center"}}>
               <Link href="/">
               <BiArrowBack/>
